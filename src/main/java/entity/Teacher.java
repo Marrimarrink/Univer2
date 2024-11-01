@@ -4,14 +4,18 @@ public class Teacher implements TeacherActions {
     private String name;
     private String surname;
     private String subject;
-    private Student student1;
+    private Student student;
+    private Univer univer;
 
+    public Teacher(){
+
+    }
 
     public Teacher(String name, String surname, String subject) {
         this.name = name;
         this.surname = surname;
         this.subject = subject;
-        this.student1 = student1;
+        this.student = student;
     }
 
     public String getName(){
@@ -26,6 +30,18 @@ public class Teacher implements TeacherActions {
         return subject;
     }
 
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setSubject(String subject){
+        this.subject = subject;
+    }
+
     @Override
     public void showInfo() {
         System.out.println("Преподаватель: " + name + " " + surname + ", Предмет: " + subject);
@@ -38,6 +54,6 @@ public class Teacher implements TeacherActions {
 
     @Override
     public void gradeExams() {
-        System.out.println(name + " выставляет оценки за экзамены cтуденту " + student1);
+        System.out.println(name + " выставляет оценки за экзамены cтуденту ");
     }
 }

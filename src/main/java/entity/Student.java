@@ -6,12 +6,32 @@ public class Student implements StudentActions {
     private int age;
     private String major;
     private Teacher teacher;
+    private Univer univer;
 
+    public  Student(){
+
+    }
 
     public Student(String name, String surname, int age, String major) {
         this.name = name;
         this.surname = surname;
         this.age = age;
+        this.major = major;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setSurname(String surnameв) {
+        this.surname = surname;
+    }
+
+    public void   setAge(int age) {
+        this.age = age;
+    }
+
+    public void setMajor(String major){
         this.major = major;
     }
 
@@ -31,6 +51,8 @@ public class Student implements StudentActions {
         return major;
     }
 
+
+
     @Override
     public void showInfo() {
         System.out.println("Студент: " + name + " " + surname + ",  Возраст: " + age);
@@ -43,7 +65,7 @@ public class Student implements StudentActions {
 
     @Override
     public void takeExam() {
-        System.out.println(name + " сдает экзамен преподавателю " + teacher);
+        System.out.println(name + " сдает экзамен преподавателю ");
     }
 }
 
