@@ -1,8 +1,7 @@
 import entity.*;
 import service.ActionPerformer;
 
-import static service.ActionPerformer.performStudentActions;
-import static service.ActionPerformer.performTeacherActions;
+import static service.ActionPerformer.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -61,9 +60,13 @@ public class Main {
 
 
         performStudentActions(student1);
+        performSkipExam(student1);
         performStudentActions(student2);
+        performExamTest(student2);
         performTeacherActions(teacher1);
+        performCareStudent(teacher1);
         performTeacherActions(teacher2);
+        performPrepareLecture(teacher2);
     }
 
 

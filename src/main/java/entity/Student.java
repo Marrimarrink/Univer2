@@ -8,7 +8,7 @@ public class Student implements StudentActions {
     private Teacher teacher;
     private Univer univer;
 
-    public  Student(){
+    public Student() {
 
     }
 
@@ -19,7 +19,7 @@ public class Student implements StudentActions {
         this.major = major;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -27,15 +27,15 @@ public class Student implements StudentActions {
         this.surname = surname;
     }
 
-    public void   setAge(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public void setMajor(String major){
+    public void setMajor(String major) {
         this.major = major;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
@@ -43,16 +43,27 @@ public class Student implements StudentActions {
         return surname;
     }
 
-    public int  getAge() {
+    public int getAge() {
         return age;
     }
 
-    public String getMajor(){
+    public String getMajor() {
         return major;
     }
 
 
+    public void doExamTest() {
+        System.out.println("Я студен: задачу для экзамена");
+    }
+    public void skipExam(){
+        System.out.println("Я студен: пытаюсь списать экзамен");
+    }
 
+
+    @Override
+    public void discuss() {
+        System.out.println("Я студент, обсуждаю с однокурсниками на какую тему хотелось написать диплом");
+    }
     @Override
     public void showInfo() {
         System.out.println("Студент: " + name + " " + surname + ",  Возраст: " + age);

@@ -42,6 +42,18 @@ public class Teacher implements TeacherActions {
         this.subject = subject;
     }
 
+    public void careStudent () {
+        System.out.println("Я преподаватель: слежу за студентами чтобы они не списывали");
+    }
+    public void prepareTextLecture(){
+        System.out.println("Я преподаватель: готовлю текст для следующей лекции");
+    }
+
+    @Override
+    public void discuss() {
+        System.out.println("Я преподаватель, обсуждаю со студентами  темы будущих дипломных проектов");
+    }
+
     @Override
     public void showInfo() {
         System.out.println("Преподаватель: " + name + " " + surname + ", Предмет: " + subject);
