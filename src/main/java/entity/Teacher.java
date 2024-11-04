@@ -1,11 +1,11 @@
 package entity;
 
 public class Teacher implements TeacherActions {
-    private String name;
-    private String surname;
-    private String subject;
-    private Student student;
-    private Univer univer;
+    String name;
+    String surname;
+    String subject;
+    Student student;
+    Univer univer;
 
     public Teacher(){
 
@@ -16,6 +16,7 @@ public class Teacher implements TeacherActions {
         this.surname = surname;
         this.subject = subject;
         this.student = student;
+        this.univer = univer;
     }
 
     public String getName(){

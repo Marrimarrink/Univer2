@@ -1,12 +1,12 @@
 package entity;
 
 public class Student implements StudentActions {
-    private String name;
-    private String surname;
-    private int age;
-    private String major;
-    private Teacher teacher;
-    private Univer univer;
+     String name;
+     String surname;
+     int age;
+     String major;
+     Teacher teacher;
+     Univer univer;
 
     public Student() {
 
@@ -17,13 +17,19 @@ public class Student implements StudentActions {
         this.surname = surname;
         this.age = age;
         this.major = major;
+        this.teacher = teacher;
+        this.univer = univer;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setSurname(String surnameв) {
+    public void setSurname(String surname) {
         this.surname = surname;
     }
 
@@ -49,6 +55,10 @@ public class Student implements StudentActions {
 
     public String getMajor() {
         return major;
+    }
+
+    public Teacher getTeacher() {
+        return teacher;
     }
 
 

@@ -21,11 +21,13 @@ public class Main {
         student1.setSurname("Новиков");
         student1.setAge(20);
         student1.setMajor("Информатика");
+        student1.setTeacher(teacher1);
 
         student2.setName("Мария");
         student2.setSurname("Агапова");
         student2.setAge(22);
         student2.setMajor("Экономика");
+        student2.setTeacher(teacher2);
 
         teacher1.setName("Иван");
         teacher1.setSurname("Петров");
@@ -35,18 +37,21 @@ public class Main {
         teacher2.setSurname("Сидорова");
         teacher2.setSubject("Экономика");
 
+
+
+
         System.out.println("Информация об университете. Наименование: " + univer.getName()
                 + ", расположение: " + univer.getAddress());
 
         System.out.println("Я студент, меня зовут " + student1.getName() + " " + student1.getSurname()
                 + ", мне " + student1.getAge() + " года,  прохожу обучение в: " + univer.getName()
                 + ",  по специальности: " + student1.getMajor() + " у преподавателя: "
-                + teacher1.getName() + " " + teacher1.getSurname());
+                + student1.getTeacher());
 
         System.out.println("Я студент, меня зовут " + student2.getName() + " " + student2.getSurname()
                 + ", мне " + student2.getAge() + " года,  прохожу обучение в: " + univer.getName()
                 + ",  по специальности: " + student2.getMajor() + " у преподавателя: "
-                + teacher2.getName() + " " + teacher2.getSurname());
+                + student2.getTeacher());
 
         System.out.println("Я преподаватель, меня зовут " + teacher1.getName() + " " + teacher1.getSurname()
                 + ", мое место работы: " + univer.getName()
