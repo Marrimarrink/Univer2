@@ -40,25 +40,36 @@ public class Main {
         System.out.println("Информация об университете. Наименование: " + univer.getName()
                 + ", расположение: " + univer.getAddress());
 
+        System.out.println();
+
         System.out.println("Я студент, меня зовут " + student1.getName() + " " + student1.getSurname()
                 + ", мне " + student1.getAge() + " года,  прохожу обучение в: " + univer.getName()
                 + ",  по специальности: " + student1.getMajor() + " у преподавателя: "
                 + student1.getTeacher().getName());
+
+        System.out.println();
 
         System.out.println("Я студент, меня зовут " + student2.getName() + " " + student2.getSurname()
                 + ", мне " + student2.getAge() + " года,  прохожу обучение в: " + univer.getName()
                 + ",  по специальности: " + student2.getMajor() + " у преподавателя: "
                 + student2.getTeacher().getName());
 
+        System.out.println();
+
         System.out.println("Я преподаватель, меня зовут " + teacher1.getName() + " " + teacher1.getSurname()
                 + ", мое место работы: " + univer.getName()
                 + ",  я веду предмет: " + teacher1.getSubject() + " у студента: "
                 + student1.getName() + " " + student1.getSurname());
 
+        System.out.println();
+
+
         System.out.println("Я преподаватель, меня зовут " + teacher2.getName() + " " + teacher2.getSurname()
                 + ", мое место работы: " + univer.getName()
                 + ",  я веду предмет: " + teacher2.getSubject() + " у студента: "
                 + student2.getName() + " " + student2.getSurname());
+
+        System.out.println();
 
         performStudentActions(student1);
         performSkipExam(student1);
