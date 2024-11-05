@@ -12,7 +12,7 @@ public class Student implements StudentActions {
 
     }
 
-    public Student(String name, String surname, int age, String major) {
+    public Student(String name, String surname, int age, String major, Teacher teacher) {
         this.name = name;
         this.surname = surname;
         this.age = age;

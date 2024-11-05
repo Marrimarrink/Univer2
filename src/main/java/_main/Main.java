@@ -8,8 +8,8 @@ public class Main {
        // ActionPerformer actionPerformer = new ActionPerformer();
         Univer univer = new Univer("Государственный Университет", "199106, Санкт-Петербург, Васильевский остров, 21 линия д.2");
 
-        Student student1 = new Student("Алексей", "Новиков", 20, "Информатика");
-        Student student2 = new Student("Мария", "Агапова", 22, "Экономика");
+        Student student1 = new Student("Алексей", "Новиков", 20, "Информатика", new Teacher());
+        Student student2 = new Student("Мария", "Агапова", 22, "Экономика",new Teacher());
 
         Teacher teacher1 = new Teacher("Иван", "Петров", "Информатика");
         Teacher teacher2 = new Teacher("Анна", "Сидорова", "Экономика");
@@ -37,21 +37,18 @@ public class Main {
         teacher2.setSurname("Сидорова");
         teacher2.setSubject("Экономика");
 
-
-
-
         System.out.println("Информация об университете. Наименование: " + univer.getName()
                 + ", расположение: " + univer.getAddress());
 
         System.out.println("Я студент, меня зовут " + student1.getName() + " " + student1.getSurname()
                 + ", мне " + student1.getAge() + " года,  прохожу обучение в: " + univer.getName()
                 + ",  по специальности: " + student1.getMajor() + " у преподавателя: "
-                + student1.getTeacher());
+                + student1.getTeacher().getName());
 
         System.out.println("Я студент, меня зовут " + student2.getName() + " " + student2.getSurname()
                 + ", мне " + student2.getAge() + " года,  прохожу обучение в: " + univer.getName()
                 + ",  по специальности: " + student2.getMajor() + " у преподавателя: "
-                + student2.getTeacher());
+                + student2.getTeacher().getName());
 
         System.out.println("Я преподаватель, меня зовут " + teacher1.getName() + " " + teacher1.getSurname()
                 + ", мое место работы: " + univer.getName()
@@ -62,7 +59,6 @@ public class Main {
                 + ", мое место работы: " + univer.getName()
                 + ",  я веду предмет: " + teacher2.getSubject() + " у студента: "
                 + student2.getName() + " " + student2.getSurname());
-
 
         performStudentActions(student1);
         performSkipExam(student1);
